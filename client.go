@@ -15,7 +15,8 @@ type TLVClient struct {
 }
 
 // ReadData() reads datalen bytes using timeout as a read timeout from the
-// server.
+// server.  It is assumed that this routine is called after a TLV has been
+// sent to the server which would result in data being returned to the client.
 func (mc *TLVClient) ReadData(datalen uint16,
 	timeout time.Duration) ([]byte, error) {
 	rb := 0
