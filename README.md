@@ -7,3 +7,9 @@ See https://godoc.org/github.com/pdmorrow/tlvclient for more information.
 ## Testing
 
 run `go test`
+
+
+## TODO
+
+* TLS support.
+* More examples.
